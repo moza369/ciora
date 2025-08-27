@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/tools
+mkdir -p ~/wordlists
 
 echo "Installing latest Go"
 
@@ -66,6 +67,10 @@ sudo make install
 
 #resolvers for shuffledns
 mv resolvers.txt ~/tools/
+
+#Install Seclists
+wget -c https://github.com/danielmiessler/SecLists/archive/master.zip -O SecList.zip && unzip SecList.zip && rm -f SecList.zip
+mv SecLists* ~/wordlists/
 
 #Add GO to the path
 if ! grep -q 'export PATH=$PATH:/usr/local/go/bin:~/go/bin' ~/.bashrc; then
