@@ -137,7 +137,7 @@ if [[ "$choose" == "Y" || "$choose" == "y" ]]; then
     # 5. ShuffleDNS
     echo "Running ShuffleDNS..."
     while IFS= read -r domain; do
-	shuffledns -d "$domain" -r ~/tools/resolvers.txt  -t 10000 -mode bruteforce  -w /wordlist.txt -silent -o subdomains/${domain}-shufflednsresult.txt
+	shuffledns -d "$domain" -r ~/tools/resolvers.txt  -t 10000 -mode bruteforce  -w ~/wordlists/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -silent -o subdomains/${domain}-shufflednsresult.txt
     done < "$wildscope_file"
 
     # Merge all results
