@@ -55,6 +55,15 @@ go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 #Http probe
 go install github.com/tomnomnom/httprobe@latest
 
+#Mass DNS
+sudo apt install -y git make gcc libc-dev
+
+git clone https://github.com/blechschmidt/massdns.git
+mv massdns ~/tools/
+cd ~/tools/massdns/
+make
+sudo make install
+
 #resolvers for shuffledns
 mv resolvers.txt ~/tools/
 
