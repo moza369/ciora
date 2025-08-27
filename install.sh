@@ -55,7 +55,8 @@ go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 #Http probe
 go install github.com/tomnomnom/httprobe@latest
 
-
+#resolvers for shuffledns
+mv resolvers.txt ~/tools/
 
 #Add GO to the path
 if ! grep -q 'export PATH=$PATH:/usr/local/go/bin:~/go/bin' ~/.bashrc; then
