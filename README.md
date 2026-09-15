@@ -6,32 +6,32 @@ _|          _|    _|    _|  _|    _|  _|    _|
   _|_|_|  _|_|_|    _|_|    _|    _|  _|    _|
 ```
 
-# 🌐 Ciora
+# Ciora
 
 Ciora is a **Bash-based recon automation tool** built for bug bounty hunters and pentesters.  
 It downloads the **HackerOne program scope** (public or private with session cookie), extracts web assets & wildcards, and optionally performs **subdomain enumeration** using multiple tools.
 
 ---
 
-## ✨ Features
-- 🔑 Supports **public & private HackerOne programs** (cookie auth for private).  
-- 📂 Automatically extracts:  
+## Features
+- Supports **public & private HackerOne programs** (cookie auth for private).  
+- Automatically extracts:  
   - Web assets  
   - Wildcards  
   - Cleaned wildcard domains  
-- 🔎 Subdomain enumeration with:  
+- Subdomain enumeration with:  
   - Amass  
   - Sublist3r  
   - Assetfinder  
   - Subfinder  
   - ShuffleDNS  
-- 🧹 **Future improvements:** add tools to clean more subdomains, URLs, and perform deeper scope analysis.  
-- 📑 Merges results into one file (`all_subdomains.txt`).  
-- ✅ Pretty banner + clean output.
+- **Future improvements:** add tools to clean more subdomains, URLs, and perform deeper scope analysis.  
+- Merges results into one file (`all_subdomains.txt`).  
+- Pretty banner + clean output.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Clone the repo and install dependencies:
 
@@ -49,7 +49,7 @@ The installer will:
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Run the tool:
 
@@ -77,7 +77,7 @@ private-program
 
 ---
 
-## 📂 Output Structure
+## Output Structure
 
 After running, you’ll get:
 
@@ -93,7 +93,7 @@ all_subdomains.txt            # Final merged subdomain list
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is for **educational and authorized security testing only**.  
 Do **not** use against targets without explicit permission.  
